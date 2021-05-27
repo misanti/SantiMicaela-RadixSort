@@ -71,6 +71,10 @@ public class StringUtil {
 	// a la izquierda, dejando a todos con la longitud del mayor
 	public static void lNormalize(String arr[], char c)
 	{
-
+		int maximo=maxLength(arr);
+		int i;
+		for(i=0; i<arr.length;i++){
+			arr[i]= lpad(arr[i],maximo,c);
+		}
 	}
 }
